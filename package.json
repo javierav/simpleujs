@@ -1,0 +1,27 @@
+{
+  "name": "simpleujs",
+  "version": "0.0.0",
+  "description": "A simple unobtrusive JavaScript library",
+  "repository": "https://github.com/javierav/simpleujs",
+  "keywords": [
+    "unobtrusive", "ujs", "javascript", "data-behavior", "rails", "html", "data"
+  ],
+  "author": {
+    "name": "Javier Aranda",
+    "email": "javier.aranda.varo@gmail.com",
+    "url": "https://github.com/javierav"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "dist/simpleujs.js",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  },
+  "scripts": {
+    "dev": "webpack --mode development --watch",
+    "dist": "webpack --mode production --env.production"
+  }
+}
