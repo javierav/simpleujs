@@ -4,7 +4,13 @@
   "description": "A simple unobtrusive JavaScript library",
   "repository": "https://github.com/javierav/simpleujs",
   "keywords": [
-    "unobtrusive", "ujs", "javascript", "data-behavior", "rails", "html", "data"
+    "unobtrusive",
+    "ujs",
+    "javascript",
+    "data-behavior",
+    "rails",
+    "html",
+    "data"
   ],
   "author": {
     "name": "Javier Aranda",
@@ -17,11 +23,13 @@
   "main": "dist/simpleujs.js",
   "license": "MIT",
   "devDependencies": {
+    "terser-webpack-plugin": "^2.3.1",
     "webpack": "^4.41.2",
-    "webpack-cli": "^3.3.10"
+    "webpack-cli": "^3.3.10",
+    "webpack-merge": "^4.2.2"
   },
   "scripts": {
-    "dev": "webpack --mode development --watch",
-    "dist": "webpack --mode production --env.production"
+    "start": "webpack --watch --config webpack.development.js",
+    "dist": "webpack --config webpack.production.js"
   }
 }
