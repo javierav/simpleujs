@@ -1,7 +1,6 @@
 # simpleujs
 
-**simpleujs** is a small library to perform unobtrusive javascript operations using `data-*`
-attributes.
+**simpleujs** is a small library to perform unobtrusive javascript actions using HTML attributes.
 
 
 ## Status
@@ -29,6 +28,13 @@ $ yarn add simpleujs
 ```
 TODO: Write usage guide
 ```
+
+## Required API
+
+You must include polifylls if your target browsers not support these APIs:
+
+* URLSearchParams
+* Element.dataset
 
 
 ## Contributing
